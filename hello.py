@@ -14,4 +14,4 @@ matrix = [
 # f = [[row[i] for row in matrix] for i in range(4)]
 
 # print(f)
-print(list(zip(matrix)))
+print(list(zip(*matrix)))
