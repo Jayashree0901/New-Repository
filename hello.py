@@ -16,5 +16,8 @@
 # print(f)
 # print(list(zip(*matrix)))
 
-s = '[1,2,3,4]'
-print(eval(s))
+# s = '[1,2,3,4]'
+# print(eval(s))
+
+import os
+print(type(os.mkdir))
