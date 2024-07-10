@@ -19,5 +19,9 @@
 # s = '[1,2,3,4]'
 # print(eval(s))
 
-import os
-print(type(os.mkdir))
+# import os
+# print(type(os.mkdir))
+
+import json
+x = json.loads('"\\"foo\\\\bar"')
+print(x)
