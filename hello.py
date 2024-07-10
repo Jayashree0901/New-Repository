@@ -25,8 +25,16 @@
 import json
 # x = json.loads('"\\"foo\\\\bar"')
 # print(x)
+
 emp_det = {'id':1, 'name':'Jaya', 'age':23, 'gender':'female', 'hobbies':['singing', 'badminton', 'drawing']}
-# print(json.dump(emp_det))  #this dump() function needs a positional arguement fp, i.e. a file to store the json output
+
+# with open('try.json', mode='w', encoding='utf-8') as wfile:
+    # print(json.dump(emp_det))  #this dump() function needs a positional arguement fp, i.e. a file to store the json output
+    # json.dump(emp_det, wfile, indent=2)
+    
+wfile = open('try.json', 'w')
+json.dump(emp_det, wfile, indent=2)
+wfile.close()
 # print(json.dumps(emp_det, indent=2))
 
 # json_var ="""
