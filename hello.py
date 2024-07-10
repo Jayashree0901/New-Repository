@@ -25,6 +25,21 @@
 import json
 # x = json.loads('"\\"foo\\\\bar"')
 # print(x)
-emp_det = {'id':1, 'name':'Jaya', 'age':23, 'gender':'female', 'hobbies':['singing', 'badminton', 'drawing']}
-print(json.dump(emp_det))
-print(json.dumps(emp_det, indent=2))
+# emp_det = {'id':1, 'name':'Jaya', 'age':23, 'gender':'female', 'hobbies':['singing', 'badminton', 'drawing']}
+# print(json.dump(emp_det))
+# print(json.dumps(emp_det, indent=2))
+
+json_var ="""
+{
+	"Country": {
+		"name": "INDIA",
+		"Languages_spoken": [
+			{
+				"names": ["Hindi", "English", "Bengali", "Telugu"]
+			}
+		]
+	}
+}
+"""
+var = json.loads(json_var)
+print(var)
